@@ -92,7 +92,7 @@ composer update
 
 ### Keep Current Bower
 
-If you still want to keep `vendor\bower`, you could set a Git-ignore for that folder:
+If you still want to keep `vendor\bower`, you could set reverse Git-ignore for that folder:
 
 ```
 # composer vendor dir
@@ -117,6 +117,8 @@ If you are using Yii2 Bower, there are some smooth ways to require or update Bow
 ### Yii2 Bower Asset Package
 
 [yidas/yii2-bower-asset](https://github.com/yidas/yii2-bower-asset) goals to install Bower for Yii2 app by original Composer repository, and makes Bower and Composer separated.
+
+This is the recommended way to handle Bower with Yii2.
 
 
 ### Asset-Packagist Solution
