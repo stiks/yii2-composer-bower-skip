@@ -24,9 +24,9 @@ FEATURES
 
 ***2. Skip Bower packages installation or update, No fxp/composer-asset-plugin needed***
 
-Bower packages are not original Packagist source from Composer, so it will cause error when you install or update Bower without a plugin. After requiring this package, Bower packages will not be required or updated, which you will keep the current version of Bower in the project vendor.
+Bower packages are not original Packagist source from Composer, so it will cause error when you install or update Bower without a plugin. After requiring this package, Bower packages will not be required or updated, which you will keep the current version of Bower or even no Bower in the project vendor.
 
-Futher, the advanced way is using [yidas/yii2-bower-asset](https://github.com/yidas/yii2-bower-asset) which could install or update Bower for Yii2 without plugin.
+If you are using Yii2 Bower, the recommended way is using [yidas/yii2-bower-asset](https://github.com/yidas/yii2-bower-asset) which could install or update Bower for Yii2 without plugin.
 
 ---
 
