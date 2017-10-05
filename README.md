@@ -90,15 +90,17 @@ composer global remove fxp/composer-asset-plugin
 composer update
 ```
 
-### Git Ignore Problem
+### Keep Current Bower
 
-You may lose Bower vendor after the project is pushed to Git server then re-install Composer from the clone one, you could check the `.gitignore` file in the root folder, which should except bower vendor:
+If you still want to keep `vendor\bower`, you could set a Git-ignore for that folder:
 
 ```
 # composer vendor dir
 /vendor/*
 !/vendor/bower
 ```
+
+For example, you may lose Bower vendor after the project is pushed to Git server then re-install Composer from the clone one.
 
 If you want keep whole `vendor` ignored, you could take a look for [yidas/yii2-bower-asset](https://github.com/yidas/yii2-bower-asset) which support auto-install for Bower.
 
@@ -107,19 +109,17 @@ If you want keep whole `vendor` ignored, you could take a look for [yidas/yii2-b
 LIMITATIONS
 -----------
 
-This solution is for the situation that you won't update Bower asset packages, and keep a fixed Bower vendor for development such as using `yii2-debug` and `yii2-gii`, so you need to manually update Bower-Asset if needed.
+This solution is for the situation that you won't require or update Bower asset of Yii2 for development such as using `yii2-debug` and `yii2-gii`.
 
-There are some smooth ways to require or update Bower for Yii2:
+If you are using Yii2 Bower, there are some smooth ways to require or update Bower for Yii2:
 
 
 ### Yii2 Bower Asset Package
 
-[yidas/yii2-bower-asset](https://github.com/yidas/yii2-bower-asset) goals to make Bower install by original composer source. Let you install or update Yii2 as soon as possible via Composer.
-
-You can change to use [yidas/yii2-bower-asset](https://github.com/yidas/yii2-bower-asset) if you still want to update Bower asset.
+[yidas/yii2-bower-asset](https://github.com/yidas/yii2-bower-asset) goals to install Bower for Yii2 app by original Composer repository, and makes Bower and Composer separated.
 
 
 ### Asset-Packagist Solution
 
-Thanks to [Asset-Packagist](https://asset-packagist.org/), you may install Bower smoothly in Yii2 with [new version](https://github.com/yiisoft/yii2-app-basic/commit/fc2ec7dfee9313288171e2fe8a5b80e22c1e1509) since release on Packagist. 
+[Asset-Packagist](https://asset-packagist.org/) is the new solution of Yii2, you may install Bower smoothly in Yii2 with [new version](https://github.com/yiisoft/yii2-app-basic/commit/fc2ec7dfee9313288171e2fe8a5b80e22c1e1509) until release. 
 
