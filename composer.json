@@ -1,5 +1,5 @@
 {
-    "name": "yidas/yii2-composer-bower-skip",
+    "name": "stiks/yii2-composer-bower-skip",
     "description": "A Composer package that allows you to install or update Yii2 without Bower-Asset",
     "keywords": ["yii2", "framework", "bower", "bower asset"],
     "type": "yii2-extension",
